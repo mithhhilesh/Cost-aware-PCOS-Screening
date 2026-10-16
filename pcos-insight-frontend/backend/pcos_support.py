@@ -139,6 +139,6 @@ def patient_explanation(explanation, patient, score, threshold=0.5):
                                    for _, r in rows.iterrows()) + '.')
     lines += ['These contributions explain this model output, not the medical cause of PCOS. '
               'A feature can act differently at another value or in another patient.',
-              'This research score is not a calibrated individual disease risk or a diagnosis. '
+              'This model score is not a calibrated individual disease risk or a diagnosis. '
               'A negative screen does not rule out PCOS; discuss symptoms and the result with a clinician.']
     return '\n\n'.join(lines)

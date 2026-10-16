@@ -34,10 +34,10 @@
         "Endometrium (mm)"
       ],
       "cv_metrics": {
-        "recall_mean": 0.83,
-        "f1_mean": 0.8488,
-        "roc_auc_mean": 0.9506,
-        "accuracy_mean": 0.9035
+        "recall_mean": 0.8299523809523809,
+        "f1_mean": 0.8490681040357433,
+        "roc_auc_mean": 0.9505913211809331,
+        "accuracy_mean": 0.9037054026503567
       }
     },
     "A1_no_very_high": {
@@ -65,10 +65,10 @@
         "PRG(ng/mL)"
       ],
       "cv_metrics": {
-        "recall_mean": 0.7137,
-        "f1_mean": 0.7402,
-        "roc_auc_mean": 0.8798,
-        "accuracy_mean": 0.8364
+        "recall_mean": 0.7136666666666668,
+        "f1_mean": 0.7401806739400147,
+        "roc_auc_mean": 0.8798773102848445,
+        "accuracy_mean": 0.836422018348624
       }
     },
     "A2_no_very_high_high": {
@@ -90,10 +90,10 @@
         "Vit D3 (ng/mL)"
       ],
       "cv_metrics": {
-        "recall_mean": 0.7271,
-        "f1_mean": 0.7577,
-        "roc_auc_mean": 0.88,
-        "accuracy_mean": 0.8477
+        "recall_mean": 0.7271428571428571,
+        "f1_mean": 0.7578648990486926,
+        "roc_auc_mean": 0.8800686441496944,
+        "accuracy_mean": 0.8478848114169216
       }
     },
     "A3_low_medium": {
@@ -115,10 +115,10 @@
         "Vit D3 (ng/mL)"
       ],
       "cv_metrics": {
-        "recall_mean": 0.7271,
-        "f1_mean": 0.7577,
-        "roc_auc_mean": 0.88,
-        "accuracy_mean": 0.8477
+        "recall_mean": 0.7271428571428571,
+        "f1_mean": 0.7578648990486926,
+        "roc_auc_mean": 0.8800686441496944,
+        "accuracy_mean": 0.8478848114169216
       }
     },
     "A4_low_only": {
@@ -139,25 +139,23 @@
         "Reg.Exercise(Y/N)"
       ],
       "cv_metrics": {
-        "recall_mean": 0.726,
-        "f1_mean": 0.7601,
-        "roc_auc_mean": 0.8814,
-        "accuracy_mean": 0.8499
+        "recall_mean": 0.726031746031746,
+        "f1_mean": 0.7602803726365284,
+        "roc_auc_mean": 0.8814886478944699,
+        "accuracy_mean": 0.8501002378525315
       }
     }
   },
   "versions": {
-    "python": "3.12.14",
+    "python": "3.12.3",
     "numpy": "2.5.4",
     "pandas": "3.0.6",
     "scikit-learn": "1.9.1",
-    "shap": "0.53.0",
-    "streamlit": "1.66.0",
+    "shap": "0.54.1",
+    "streamlit": "1.32.0",
     "xgboost": "3.4.1",
     "lightgbm": "4.7.0",
     "joblib": "1.6.0"
   },
-  "selection_provenance": "Original saved seven-model winner table, cell 150; numeric CV metrics from original cell 108; saved precision four decimals.",
-  "evaluation_label": "Original saved supplementary single-pass 5-fold out-of-fold scores (cell 148); rounded to 4 decimals; no fold SD. These are separate from the 50-fold selection results.",
-  "comparison_kind": "single_pass_oof"
+  "evaluation_label": "Original repeated stratified CV: 5 folds \u00d7 10 repeats; mean \u00b1 fold SD"
 }

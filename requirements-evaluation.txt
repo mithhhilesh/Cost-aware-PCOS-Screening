@@ -1,0 +1,6 @@
+# Minimal evaluation dependencies. Original dashboard lock remains separate.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+nbformat==5.11.1

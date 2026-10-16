@@ -1,0 +1,136 @@
+INPUT OBSERVATIONS
+==================
+
+Source: the input schemas stored in the current artifacts/*.joblib export.
+These are the exported training-data minimum and maximum values.
+They are NOT clinical normal ranges, diagnostic thresholds, or hard input limits.
+An input outside an observed range may still receive a prediction with a warning.
+Separate cleaning rules may reject some values.
+
+Definitions
+-----------
+Cycle length(days) means menstrual bleeding duration: the number of days
+bleeding lasts during a period, not the interval between periods.
+Cycle(R/I): code 2 = Regular; code 4 = Irregular.
+Yes/No inputs: code 0 = No; code 1 = Yes.
+
+Distinct model input groups
+---------------------------
+A4_low_only: 12 inputs
+A2_no_very_high_high: 13 inputs
+A1_no_very_high: 19 inputs
+A0_full: 24 inputs
+A2/A3 duplicate configurations are listed only once.
+
+Free / Low Cost
+---------------
+Age (yrs)
+  Observed minimum: 20
+  Observed maximum: 48
+
+BMI
+  Observed minimum: 12.417882
+  Observed maximum: 38.9
+
+Waist:Hip Ratio
+  Observed minimum: 0.75555556
+  Observed maximum: 0.97916667
+
+Cycle(R/I)
+  Observed minimum: 2
+  Observed maximum: 4
+  Available codes: 2, 4
+
+Menstrual bleeding duration (days)
+  Observed minimum: 2
+  Observed maximum: 12
+
+Weight gain(Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+hair growth(Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Skin darkening (Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Hair loss(Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Pimples(Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Fast food (Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Reg.Exercise(Y/N)
+  Observed minimum: 0
+  Observed maximum: 1
+  Available codes: 0, 1
+
+Medium Cost
+-----------
+Vit D3 (ng/mL)
+  Observed minimum: 6.077
+  Observed maximum: 90
+
+High Cost (Hormonal Labs)
+-------------------------
+FSH(mIU/mL)
+  Observed minimum: 0.21
+  Observed maximum: 65.4
+
+LH(mIU/mL)
+  Observed minimum: 0.02
+  Observed maximum: 14.69
+
+TSH (mIU/L)
+  Observed minimum: 0.04
+  Observed maximum: 65
+
+AMH(ng/mL)
+  Observed minimum: 0.1
+  Observed maximum: 20
+
+PRL(ng/mL)
+  Observed minimum: 0.4
+  Observed maximum: 128.24
+
+PRG(ng/mL)
+  Observed minimum: 0.047
+  Observed maximum: 85
+
+Very High Cost (Ultrasound)
+---------------------------
+Follicle No. (L)
+  Observed minimum: 0
+  Observed maximum: 22
+
+Follicle No. (R)
+  Observed minimum: 0
+  Observed maximum: 20
+
+Avg. F size (L) (mm)
+  Observed minimum: 2
+  Observed maximum: 24
+
+Avg. F size (R) (mm)
+  Observed minimum: 0.17
+  Observed maximum: 24
+
+Endometrium (mm)
+  Observed minimum: 2.5
+  Observed maximum: 18
+

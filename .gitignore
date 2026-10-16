@@ -6,3 +6,11 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 .DS_Store
+
+.cleanup-backups/
+artifacts/
+PCOS_dataset.csv
+evaluation_runs/
+**/node_modules/
+**/.vite-cache/
+PRIVATE_*.csv
