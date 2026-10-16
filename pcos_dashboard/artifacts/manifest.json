@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "selection_rule": "Recall > F1 > ROC-AUC > accuracy; alphabetical tie-break",
+  "analysis": "Primary",
+  "threshold": 0.5,
+  "groups": {
+    "A0_full": {
+      "model": "Logistic Regression",
+      "n_features": 24,
+      "features": [
+        " Age (yrs)",
+        "BMI",
+        "Waist:Hip Ratio",
+        "Cycle(R/I)",
+        "Cycle length(days)",
+        "Weight gain(Y/N)",
+        "hair growth(Y/N)",
+        "Skin darkening (Y/N)",
+        "Hair loss(Y/N)",
+        "Pimples(Y/N)",
+        "Fast food (Y/N)",
+        "Reg.Exercise(Y/N)",
+        "Vit D3 (ng/mL)",
+        "FSH(mIU/mL)",
+        "LH(mIU/mL)",
+        "TSH (mIU/L)",
+        "AMH(ng/mL)",
+        "PRL(ng/mL)",
+        "PRG(ng/mL)",
+        "Follicle No. (L)",
+        "Follicle No. (R)",
+        "Avg. F size (L) (mm)",
+        "Avg. F size (R) (mm)",
+        "Endometrium (mm)"
+      ],
+      "cv_metrics": {
+        "recall_mean": 0.8299523809523809,
+        "f1_mean": 0.848832183183384,
+        "roc_auc_mean": 0.9506145871083086,
+        "accuracy_mean": 0.9035202174651715
+      }
+    },
+    "A1_no_very_high": {
+      "model": "Logistic Regression",
+      "n_features": 19,
+      "features": [
+        " Age (yrs)",
+        "BMI",
+        "Waist:Hip Ratio",
+        "Cycle(R/I)",
+        "Cycle length(days)",
+        "Weight gain(Y/N)",
+        "hair growth(Y/N)",
+        "Skin darkening (Y/N)",
+        "Hair loss(Y/N)",
+        "Pimples(Y/N)",
+        "Fast food (Y/N)",
+        "Reg.Exercise(Y/N)",
+        "Vit D3 (ng/mL)",
+        "FSH(mIU/mL)",
+        "LH(mIU/mL)",
+        "TSH (mIU/L)",
+        "AMH(ng/mL)",
+        "PRL(ng/mL)",
+        "PRG(ng/mL)"
+      ],
+      "cv_metrics": {
+        "recall_mean": 0.7136666666666668,
+        "f1_mean": 0.7401685414138942,
+        "roc_auc_mean": 0.8798149054142205,
+        "accuracy_mean": 0.836422018348624
+      }
+    },
+    "A2_no_very_high_high": {
+      "model": "Logistic Regression",
+      "n_features": 13,
+      "features": [
+        " Age (yrs)",
+        "BMI",
+        "Waist:Hip Ratio",
+        "Cycle(R/I)",
+        "Cycle length(days)",
+        "Weight gain(Y/N)",
+        "hair growth(Y/N)",
+        "Skin darkening (Y/N)",
+        "Hair loss(Y/N)",
+        "Pimples(Y/N)",
+        "Fast food (Y/N)",
+        "Reg.Exercise(Y/N)",
+        "Vit D3 (ng/mL)"
+      ],
+      "cv_metrics": {
+        "recall_mean": 0.7271428571428571,
+        "f1_mean": 0.757664973095342,
+        "roc_auc_mean": 0.8800055869633495,
+        "accuracy_mean": 0.8476996262317366
+      }
+    },
+    "A3_low_medium": {
+      "model": "Logistic Regression",
+      "n_features": 13,
+      "features": [
+        " Age (yrs)",
+        "BMI",
+        "Waist:Hip Ratio",
+        "Cycle(R/I)",
+        "Cycle length(days)",
+        "Weight gain(Y/N)",
+        "hair growth(Y/N)",
+        "Skin darkening (Y/N)",
+        "Hair loss(Y/N)",
+        "Pimples(Y/N)",
+        "Fast food (Y/N)",
+        "Reg.Exercise(Y/N)",
+        "Vit D3 (ng/mL)"
+      ],
+      "cv_metrics": {
+        "recall_mean": 0.7271428571428571,
+        "f1_mean": 0.757664973095342,
+        "roc_auc_mean": 0.8800055869633495,
+        "accuracy_mean": 0.8476996262317366
+      }
+    },
+    "A4_low_only": {
+      "model": "Logistic Regression",
+      "n_features": 12,
+      "features": [
+        " Age (yrs)",
+        "BMI",
+        "Waist:Hip Ratio",
+        "Cycle(R/I)",
+        "Cycle length(days)",
+        "Weight gain(Y/N)",
+        "hair growth(Y/N)",
+        "Skin darkening (Y/N)",
+        "Hair loss(Y/N)",
+        "Pimples(Y/N)",
+        "Fast food (Y/N)",
+        "Reg.Exercise(Y/N)"
+      ],
+      "cv_metrics": {
+        "recall_mean": 0.726031746031746,
+        "f1_mean": 0.7600804466831778,
+        "roc_auc_mean": 0.8814418986011452,
+        "accuracy_mean": 0.8499150526673463
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "shap": "0.53.0",
+    "streamlit": "1.32.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "evaluation_label": "Original repeated stratified CV: 5 folds \u00d7 10 repeats; mean \u00b1 fold SD"
+}

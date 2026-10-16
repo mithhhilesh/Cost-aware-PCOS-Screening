@@ -1,0 +1,11 @@
+The model score is 71.7%; its reference score is 35.0%.
+
+At the fixed 50% threshold, this is a positive screening prediction.
+
+Inputs that raised the score relative to the reference: Skin darkening (Y/N) (1): 18.0 percentage points; Weight gain(Y/N) (1): 12.6 percentage points; Age (yrs) (24): 8.9 percentage points.
+
+Inputs that lowered the score relative to the reference: Cycle(R/I) (2): 5.5 percentage points; hair growth(Y/N) (0): 5.0 percentage points; Hair loss(Y/N) (1): 2.7 percentage points.
+
+These contributions explain this model output, not the medical cause of PCOS. A feature can act differently at another value or in another patient.
+
+This research score is not a calibrated individual disease risk or a diagnosis. A negative screen does not rule out PCOS; discuss symptoms and the result with a clinician.
